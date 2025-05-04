@@ -1,6 +1,7 @@
 import logging
 import requests
 import wikipediaapi
+import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, CallbackContext
 
@@ -128,7 +129,7 @@ def error_handler(update: Update, context: CallbackContext) -> None:
 
 # --- Configuração do bot ---
 def main() -> None:
-    TOKEN = "7868116621:AAG_g5nfjY2uueQsSozlLRevla1Tg2DgjIY"
+    TOKEN = os.getenv("TELEGRAM_TOKEN")
     app = Application.builder().token(TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))
