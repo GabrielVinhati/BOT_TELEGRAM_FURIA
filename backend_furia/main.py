@@ -12,7 +12,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # --- Configuração da Wikipedia ---
-USER_AGENT = "FURIAFanBot/1.0 (+https://github.com/seuusuario/botfuria; contato@seuemail.com)"
+USER_AGENT = "FURIAFanBot/1.0 (+https://github.com/GabrielVinhati; mailto:gabriel.vinhati@outlook.com)"
 wiki = wikipediaapi.Wikipedia(language='pt', user_agent=USER_AGENT)
 
 # --- Função de fallback para buscar o título mais relevante ---
