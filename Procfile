@@ -1,0 +1,1 @@
+cd backend_furia && python main.py
