@@ -1,0 +1,89 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.text-purple {
+    color: #60349c;
+}
+
+.btn-purple {
+    background-color: #60349c;
+    color: white;
+    border: none;
+}
+
+.btn-purple:hover {
+    background-color: #4a1b7f;
+}
+
+/* Animações */
+.animar-esquerda {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: animarEsquerda 1s forwards;
+}
+
+.animar-direita {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: animarDireita 1s forwards;
+}
+
+/* Efeito hover para os cards */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efeito hover para os links de navegação */
+.nav-link:hover {
+    color: #60349c;
+    transition: color 0.3s ease;
+}
+
+@keyframes animarEsquerda {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes animarDireita {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.destaque {
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  .destaque h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .destaque p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  .destaque .btn {
+    background-color: #60349c;
+    color: white;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  .destaque .btn:hover {
+    background-color: #4b297b;
+  }
+  
